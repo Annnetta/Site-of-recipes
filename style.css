@@ -1,0 +1,285 @@
+﻿body {
+	display:flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+}
+
+header{
+    background-color: #BFBFBF;
+    text-align: center;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    display: flex;
+    justify-content: center;
+    height: 63px;
+}
+
+#logo img {
+		width:100px;
+		height:66px;
+}
+
+#titre {
+	display: flex;
+	flex-direction:column;
+	justify-content:center;
+	margin: 20px;
+}
+
+#NomSite {
+	font-size: 1.50em;
+}
+
+#slogan {
+	font-size: 0.85em;
+	font-style: italic;
+}
+
+nav {
+    margin-bottom: 5px;
+}
+
+nav ul {
+	font-size: 1.15em;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	line-height: 26px;
+	text-align: center;
+}
+
+nav ul li {
+	float: left;
+	width: 25%;
+	background-color: #D2CDCD;
+}
+
+nav ul li:hover {
+	background-color: #676767;
+	color: white;
+}
+
+nav ul a { /*Les liens du menu*/
+	text-decoration: none;
+	color: black;
+}
+
+nav li ul {
+	font-size: 0.8em;
+	position: absolute;
+	left: -999em;
+	text-align: left;
+	z-index: 1000;
+}
+
+nav li:hover ul {
+	left: auto;
+	width: 99%;
+}
+
+/* Pour la page saisie_ingredients.php
+Penser à mettre un fielset autour du formulaire pour avoir le même style sur tous */
+fieldset {
+	padding:0 20px 20px 20px;
+	margin-bottom:10px;
+	margin-top: 10px;
+	border:1px solid #DF3F3F;
+}
+
+legend {
+	font-weight: bold;
+	color: #DF3F3F;
+}
+
+.champ {
+	display: block;
+}
+
+label {
+	margin-top:10px;
+	display:inline-block;
+}
+
+input, textarea, select, option {
+	background-color:#FFF3F3;
+}
+input, textarea, select {
+	padding:3px;
+	border:1px solid #F5C5C5;
+	border-radius:5px;
+	width:200px;
+	box-shadow:1px 1px 2px #C0C0C0 inset;
+}
+ 
+select {
+	margin-top:10px;
+}
+
+input[type=submit], input[type=reset] {
+	width:110px;
+	margin-left:5px;
+	box-shadow:1px 1px 1px #D83F3D;
+	cursor:pointer;
+    margin-top: 5px;
+}
+
+
+input[type=radio] {
+ background-color:transparent;
+ border:none;
+ width:10px;
+ }
+
+input:focus, textarea:focus {
+	background-color:white;
+}
+ 
+input[type=submit]:focus, input[type=reset]:focus {
+	background-color:#FFF3F3;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+	background-color:#FCDEDE;
+}
+ 
+input[type=submit]:active, input[type=reset]:active {
+	background-color:#FCDEDE;
+	box-shadow:1px 1px 1px #D83F3D inset;
+}
+
+/* Pour la page accueil.php*/
+th, td { 
+		border : 2px solid black;
+}	
+
+footer {
+    background-color: #BFBFBF;
+    text-align: center;
+    justify-content: space-around;
+    clear: both;
+    border-bottom-left-radius: 1em;
+	 border-bottom-right-radius: 1em;
+	 margin-top: 5px;
+}
+
+footer a {
+	color: black;
+	text-decoration: underline;
+	height: 31px;
+}
+
+#stats {
+	font-size: 0.85em;
+	font-style: italic;
+	margin-bottom: 2px;
+	margin-top: 2px;
+}
+
+/*pour la page d'accueil version du blocs"*/
+
+	h1.oblique {
+		font-weight:bold;
+		font-style:oblique;
+		color: rgb(116, 0, 83);
+		text-align: center;
+		font-size: 21px;
+	}
+
+	.accueil{
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #D3D3D3;
+		padding-top: 1px;
+		
+	}
+
+	.accueil div {
+		
+		background-color: rgb(116, 0, 83);
+		text-align: center;
+		border-radius: 20px;
+		width:26%;
+		height: 40%;
+		
+	}
+
+
+	/*pour ajouter le cercle au milieu*/
+	.d1 img{
+		width:70%;
+		height:80%;
+		margin-top:2%;
+		border-radius: 50%;
+	}
+
+	.d2 img{
+		width:70%;
+		height:80%;
+		margin-top:2%;
+		border-radius: 50%;
+	}
+
+	.d3 img{
+		width:70%;
+		height:80%;
+		margin-top:2%;
+		border-radius: 50%;
+	}
+
+	.d4 img{
+		width:70%;
+		height:80%;
+		margin-top:2%;
+		border-radius: 50%;
+	}
+
+
+	 .d1, .d2, .d3, .d4 {
+				float:left;
+				width:26%;
+				height: 40%;
+			}
+			
+			
+	.d1 {
+		margin-left:23%;		
+		margin-right: 2%;
+		}
+		
+		
+	.d3 {
+		clear:both;
+		margin-left: 23%;
+		margin-right: 2%;
+		margin-bottom:10%;
+		}
+		
+	.d4 {
+		margin-bottom:10%;
+		}
+			
+	.d1, .d2 {
+		 margin-bottom:2%;
+			}
+
+	p.title_acc{
+		color: white;
+		text-align: center;	
+		font-size: 18px;
+		font-weight: bold;
+		letter-spacing: 1px;
+		
+	}
+	
+	.accueil a {
+        text-decoration: none;
+    }
+
+/*fin de page accueil*/
+
+
+
+
