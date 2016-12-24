@@ -10,3 +10,4 @@ It is a university project of managing the recipes with possibilities of:
 
 -showing the users/ingredients/recipes on the map
 
+Made by Hanna Parshuto and Luc Gombert
